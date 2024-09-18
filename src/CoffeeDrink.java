@@ -2,9 +2,9 @@
 
 class CoffeeDrink {
 
-    int numberOfCups;
-    String flavor;
-    boolean hasWhippedCream;
+   private int numberOfCups;
+    private String flavor;
+    private boolean hasWhippedCream;
 
 
 
@@ -28,5 +28,29 @@ class CoffeeDrink {
         System.out.println("Flavor: " + flavor);
         System.out.println("Has Whipped Cream = " + hasWhippedCream);
 
+    }
+
+    public void setFlavor(String flavor){
+            this.flavor = flavor;
+        }
+
+    public String getFlavor(){
+        return flavor;
+    }
+
+    public void setNumberOfCups(int numberOfCups){
+        this.numberOfCups = numberOfCups;
+    }
+
+    public int getNumberOfCups(){
+        return numberOfCups;
+    }
+
+    public void setHasWhippedCream(boolean hasWhippedCream){
+        this.hasWhippedCream=hasWhippedCream;
+    }
+
+    public boolean getHasWhippedCream(){
+        return hasWhippedCream;
     }
 }
